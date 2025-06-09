@@ -1,13 +1,15 @@
 import kolenkaIncLogo from '/koleno.png'
 import './App.css'
+import { SwitchNavigationWithTranslation } from './SwitchNavigation'
 
 function App() {
 
   return (
     <>
+      <SwitchNavigationWithTranslation />
       <div>
         <a href="https://vite.dev" target="_blank">
-          <img src={kolenkaIncLogo} className="logo" alt="Vite logo" />
+          <img src={kolenkaIncLogo} className="logo" alt="Kolenka Inc logo" />
         </a>
       </div>
       <h1>Kolenka Inc</h1>

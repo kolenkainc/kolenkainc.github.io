@@ -1,0 +1,14 @@
+{
+  "home.hi_there": "Hi there",
+  "home.description": "My name is Romashov Dmitrii and this is my personal page",
+  "home.who_am_i": "I'm a full stack software engineer",
+  "home.pets.title": "My pet-projects",
+  "home.pets.dawns.title": "\"Polar dawns\" internet-radio",
+  "home.pets.tourists.title": "Tourists",
+  "home.pets.izzy.description": "Know your debtor",
+  "home.pets.chat.title": "Chat",
+  "home.pets.chat.description": "Simple chat via SignalR",
+  "home.cv.link": "https://docs.google.com/document/d/1N12vt1sI-6pdQyc3QJbylNvlbOayulmd",
+  "home.cv.description": "You can also have a look at my CV",
+  "tourists.title": "There will be cool a project here soon"
+}
