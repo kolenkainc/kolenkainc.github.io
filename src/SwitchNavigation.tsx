@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { useTranslation, withTranslation } from 'react-i18next';
 
 import './SwitchNavigation.css';
-import { Russian } from './Russian';
+import { Russian } from './russian';
 import { Croatian } from './croatian';
-import type { Language } from './Language';
+import type { Language } from './language';
 
 const languages = [new Russian(), new Croatian()];
 

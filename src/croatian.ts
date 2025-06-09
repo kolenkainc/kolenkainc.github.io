@@ -1,4 +1,4 @@
-import { Language } from "./Language";
+import { Language } from "./language";
 
 export class Croatian extends Language {
   public toIETF(): string {
