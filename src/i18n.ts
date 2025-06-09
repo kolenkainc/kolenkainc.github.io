@@ -5,10 +5,8 @@ import { initReactI18next } from "react-i18next";
 
 const opts: InitOptions = {
   fallbackLng: {
-    hr: ["hr-HR"],
-    ru: ["ru-RU"],
     en: ["ru-RU"],
-    default: ["ru"],
+    default: ["ru-RU"],
   },
   keySeparator: false,
   load: "currentOnly",

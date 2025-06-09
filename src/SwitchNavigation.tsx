@@ -19,24 +19,17 @@ function SwitchNavigation() {
 
   return (
     <ul className="switch-navigation_ul">
-      <li>
-        <button
-          aria-label={'switch-button_' + languages[0].toIETF()}
-          className={`${languages[0].isSelectedLanguage(selectedLanguage) ? 'switch-button_bold' : ''}`}
-          onClick={() => handleClick(languages[0])}
-        >
-          {languages[0].toButtonText()}
-        </button>
+      {languages.map(lan => 
+        <li key={lan.toIETF()}>
+          <button
+            aria-label={'switch-button_' + lan.toIETF()}
+            className={`${lan.isSelectedLanguage(selectedLanguage) ? 'switch-button_bold' : ''}`}
+            onClick={() => handleClick(lan)}
+          >
+            {lan.toButtonText()}
+          </button>
       </li>
-      <li>
-        <button
-          aria-label={'switch-button_' + languages[1].toIETF()}
-          className={`${languages[1].isSelectedLanguage(selectedLanguage) ? 'switch-button_bold' : ''}`}
-          onClick={() => handleClick(languages[1])}
-        >
-          {languages[1].toButtonText()}
-        </button>
-      </li>
+      )}
     </ul>
   );
 }

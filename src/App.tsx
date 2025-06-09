@@ -1,9 +1,11 @@
+import { SwitchNavigationWithTranslation } from './SwitchNavigation'
+import { useTranslation } from 'react-i18next';
+
 import kolenkaIncLogo from '/koleno.png'
 import './App.css'
-import { SwitchNavigationWithTranslation } from './SwitchNavigation'
 
 function App() {
-
+  const { t } = useTranslation();
   return (
     <>
       <SwitchNavigationWithTranslation />
@@ -13,15 +15,15 @@ function App() {
         </a>
       </div>
       <h1>Kolenka Inc</h1>
-      <h2>Запускаем стартапы и помогаем с процессами</h2>
-      <div className="functions">
-        <div>Программируем веб-сервисы и мобильные приложения</div>
-        <div>Автоматизируем и интегрируем бизнес-процессы</div>
-        <div>Примиряем точки зрения разработки и бизнеса</div>
-        <div>Развиваем ваши IT-отделы</div>
-        <div>Помогаем экономить на IT-решениях</div>
-      </div>
-      <h2>Напишите нам на почту <a href="mailto:dmitry@romashov.tech">dmitry@romashov.tech</a></h2>
+      <h2>{t('home.header')}</h2>
+      <ul className="functions">
+        <li>{t('home.option1')}</li>
+        <li>{t('home.option2')}</li>
+        <li>{t('home.option3')}</li>
+        <li>{t('home.option4')}</li>
+        <li>{t('home.option5')}</li>
+      </ul>
+      <h2>{t('home.footer')}<a href="mailto:dmitry@romashov.tech">dmitry@romashov.tech</a></h2>
     </>
   )
 }
