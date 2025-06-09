@@ -19,6 +19,7 @@ function App() {
         <div>Развиваем ваши IT-отделы</div>
         <div>Помогаем экономить на IT-решениях</div>
       </div>
+      <h2>Напишите нам на почту <a href="mailto:dmitry@romashov.tech">dmitry@romashov.tech</a></h2>
     </>
   )
 }
