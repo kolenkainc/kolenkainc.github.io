@@ -1,7 +1,7 @@
 import { SwitchNavigationWithTranslation } from './SwitchNavigation'
 import { useTranslation } from 'react-i18next';
 
-import kolenkaIncLogo from '/koleno.png'
+import kolenkaIncLogo from './assets/koleno.svg'
 import './App.css'
 
 function App() {
